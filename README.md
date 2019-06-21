@@ -1,6 +1,5 @@
-# Running :
-- Open cypress folder :
+# Run :
 ```
-1. npm install
-2. npm run e2e-test
+npm install
+npm run e2e-test
 ```
