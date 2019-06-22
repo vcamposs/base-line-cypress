@@ -1,6 +1,6 @@
-Feature: Base
+Feature: Use page "My Todo list"
 
-  Scenario: Base
+  Scenario: I wanna add a new item, mark as completed and deleted. 
     Given Open "/"
     When I am redirect to "http://localhost:3000/"
     And I fill "newItemField" with "Buy cinema ticket"
