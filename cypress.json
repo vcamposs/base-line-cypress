@@ -3,5 +3,5 @@
 	"pluginsFile": "cypress/config/plugins.js",
 	"supportFile": "cypress/config/support.js",
 	"screenshotsFolder": "cypress/screenshots",
-	"baseUrl": "https://www.google.com/"
+	"baseUrl": "http://localhost:3000/"
 }

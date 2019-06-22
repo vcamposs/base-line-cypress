@@ -1,8 +1,22 @@
-import { Given } from "cypress-cucumber-preprocessor/steps";
-import { When } from "cypress-cucumber-preprocessor/steps";
-import { And } from "cypress-cucumber-preprocessor/steps";
 import { Then } from "cypress-cucumber-preprocessor/steps";
+const basePage = require('../page_objects/base.page');
 
-Given('Open Google', () => {
-	cy.visit('/');;
+Then('Open {string}', page => {
+	basePage.openUrl(page);
 });
+
+Then('I am redirect to {string}', url => {
+	basePage.verifyUrl(url);
+});
+
+Then('I click on {string} button', button => {
+	basePage.clickButton(button);
+});
+
+Then('I fill {string} with {string}', (field, text) => {
+	basePage.fillField(field,text)
+});
+
+Then('I verify the element {string} with text {string}', (element, label) => {
+	basePage.verifyLabel(element, label);
+}); 
