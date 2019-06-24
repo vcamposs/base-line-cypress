@@ -6,23 +6,9 @@ const basePage = {
         cy.url().should('include', url);
     },
     clickButton: button => {
-        // cy.get(pageObjects.getDataTest(button))
-        // .first()
-        // .click();
-        // cy.get(pageObjects.getDataTest(button)).then(teste => {
-        //     teste.array.forEach(element => {
-                
-        //     });
-        //     teste[1].click();
-        // });
-        // cy.get(pageObjects.getDataTest(button)).each(()) => {
-
-        // })
-
-        cy.get(pageObjects.getDataTest(button)).each((buttons, i) => {
-            console.log(i);
-            console.log(buttons[i].click());
-          })
+        cy.get(pageObjects.getDataTest(button))
+        .first()
+        .click();
     },
     fillField: (field, text) => {
         cy.get(pageObjects.getDataTest(field))
